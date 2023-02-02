@@ -1,5 +1,5 @@
-// export default class Team {
-class Team {
+export default class Team {
+// class Team {
   constructor() {
     this.members = new Set();
   }
@@ -9,14 +9,14 @@ class Team {
       throw new Error('Персонаж записан в Set - контейнер');
     }
     this.members.add(nameCharacter);
-    console.log(this.members);
+    // console.log(this.members);
   }
 
   addAll(...nameCharacters) {
     for (const item of nameCharacters) {
       this.members.add(item);
     }
-    console.log(this.members);
+    // console.log(this.members);
   }
 
   toArray(...nameCharacters) {
@@ -28,45 +28,45 @@ class Team {
     // console.log(this.members);
     array.forEach((item) => {
       const array1 = Object.entries(item);
-      console.log(array1);
+      // console.log(array1);
       return array1;
     });
   }
 }
 
 
-const characterSet = new Team();
+// const characterSet = new Team();
 
-const bowman = {
-  name: 'Halk',
-  type: 'Bowman',
-  health: 100,
-  level: 1,
-  attack: 25,
-  defence: 25,
-};
+// const bowman = {
+//   name: 'Halk',
+//   type: 'Bowman',
+//   health: 100,
+//   level: 1,
+//   attack: 25,
+//   defence: 25,
+// };
 // characterSet.add(bowman);
 
-const daemon = {
-  name: 'Jhon',
-  type: 'Daemon',
-  health: 100,
-  level: 1,
-  attack: 10,
-  defence: 40,
-};
-// characterSet.add(daemon);
+// const daemon = {
+//   name: 'Jhon',
+//   type: 'Daemon',
+//   health: 100,
+//   level: 1,
+//   attack: 10,
+//   defence: 40,
+// };
+// // characterSet.add(daemon);
 
-const magican = {
-  name: 'Wind',
-  type: 'Magician',
-  health: 100,
-  level: 1,
-  attack: 10,
-  defence: 40,
-};
+// const magican = {
+//   name: 'Wind',
+//   type: 'Magician',
+//   health: 100,
+//   level: 1,
+//   attack: 10,
+//   defence: 40,
+// };
 // characterSet.addAll(bowman, daemon, magican, bowman);
-characterSet.toArray(bowman, daemon, magican, bowman);
+// characterSet.toArray(bowman, daemon, magican, bowman);
 
 
 // characterSet.add(magican);
