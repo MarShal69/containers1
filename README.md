@@ -1,3 +1,6 @@
+# SI Test demo
+[![Build status](https://ci.appveyor.com/api/projects/status/j7kfx84p7daiqhig?svg=true)](https://ci.appveyor.com/project/MarShal69/containers1)
+
 # Домашнее задание к лекции «Занятие 8. Контейнеры»
 
 ### **Важные моменты** 
