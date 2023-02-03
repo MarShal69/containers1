@@ -1,5 +1,5 @@
 export default class Team {
-// class Team {
+  // class Team {
   constructor() {
     this.members = new Set();
   }
@@ -9,7 +9,6 @@ export default class Team {
       throw new Error('Персонаж записан в Set - контейнер');
     }
     this.members.add(nameCharacter);
-    // console.log(this.members);
   }
 
   addAll(...nameCharacters) {
@@ -19,24 +18,13 @@ export default class Team {
     // console.log(this.members);
   }
 
-  toArray(...nameCharacters) {
-    for (const item of nameCharacters) {
-      this.members.add(item);
-    }
-    // console.log(this.members);
-    const array = Array.from(this.members);
-    // console.log(this.members);
-    array.forEach((item) => {
-      const array1 = Object.entries(item);
-      // console.log(array1);
-      return array1;
-    });
+  toArray() {
+    return [...this.members];
   }
 }
 
 
 // const characterSet = new Team();
-
 // const bowman = {
 //   name: 'Halk',
 //   type: 'Bowman',
@@ -55,7 +43,7 @@ export default class Team {
 //   attack: 10,
 //   defence: 40,
 // };
-// // characterSet.add(daemon);
+// characterSet.add(daemon);
 
 // const magican = {
 //   name: 'Wind',
@@ -96,3 +84,10 @@ export default class Team {
 //   attack: 40,
 //   defence: 10,
 // };
+
+
+// for (const item of nameCharacters) {
+//   this.members.add(item);
+// }
+// console.log(this.members);
+// console.log([...this.members]);
